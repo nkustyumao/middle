@@ -1,0 +1,21 @@
+ <td width="100">
+              <p>會員管理系統</p>
+              <p><?php echo $mname; ?> 您好。</p>
+              <p>本次登入的時間為：<br>
+              <?php echo $mlogintime; ?></p>
+              <p align="center"><a href="adminUpdate.php?id=%3C?php%20echo%20$mid;%20?%3E">修改資料</a> | <a href="?logout=true">登出系統</a></p>
+            </td>
+
+
+
+
+
+            <div style="flex-grow: 1;">
+  <div>
+    <h3>會員系統</h3>
+    <p><strong><?php echo $row_RecMember["username"]; ?></strong> 您好。</p>
+    <p>本次登入的時間為：<br>
+    <?php echo $row_RecMember["logintime"]; ?></p>
+    <p align="center"><a href="admin.php">會員中心</a> | <a href="?logout=true">登出系統</a></p>
+  </div>
+  </div>
